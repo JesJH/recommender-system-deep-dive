@@ -1,5 +1,9 @@
 # What Is a Recommender System?
 
+> **About this project**: Everything here is implemented from scratch using real data (MovieLens 100K). The goal is not to use a library as a black box, but to build each approach by hand — so the math, the tradeoffs, and the failure modes are visible and understood. If you want to *know* recommender systems, not just use them, this is the approach.
+
+---
+
 ## The Problem
 
 A recommender system's job is to surface the right item to the right user at the right time — at scale, and without requiring the user to explicitly search for it.

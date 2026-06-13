@@ -1,6 +1,8 @@
 # Recommender Systems: A Deep Dive
 
-A portfolio project walking through how recommender systems work — from first principles to production architecture — with real data, real code, and honest evaluation.
+A learning project built to understand recommender systems by implementing every concept from scratch — not by calling library APIs, but by writing the math, seeing it break, and fixing it with real data.
+
+Each section builds on the last: start with the simplest possible approach, understand exactly why it works and where it fails, then layer in complexity. Everything runs on [MovieLens 100K](https://grouplens.org/datasets/movielens/100k/) — real interactions from real users — so the problems you hit are real too (sparsity, cold start, popularity bias, offline/online metric gaps).
 
 ---
 
@@ -101,12 +103,20 @@ See [07 · Evaluation](07_evaluation/) and [08 · Business Value](08_business_va
 
 ---
 
+## Philosophy
+
+Every model in this repo is implemented from scratch in Python/NumPy/PyTorch. The `implicit` library appears in section 03 only after we've already built ALS by hand — to show what the production version looks like once you understand what it's doing. Same pattern for deep learning: write the forward pass yourself before leaning on a framework.
+
+The goal is to finish this repo knowing *why* each line of code exists.
+
 ## Setup
 
 ```bash
 git clone https://github.com/JesJH/recommender_system_deep_dive.git
 cd recommender_system_deep_dive
 pip install -r requirements.txt
+# Download data:
+cd data && curl -O https://files.grouplens.org/datasets/movielens/ml-100k.zip && unzip ml-100k.zip
 jupyter lab
 ```
 
