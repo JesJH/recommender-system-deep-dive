@@ -1,0 +1,33 @@
+## Data (not committed — see data/README.md for download instructions)
+data/ml-100k/
+data/*.zip
+data/*.csv
+data/*.db
+
+## Serving store
+06_serving_architecture/recs.db
+
+## Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.env
+venv/
+.venv/
+env/
+
+## Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+## IDE
+.idea/
+.vscode/
+*.swp
+
+## OS
+.DS_Store
+Thumbs.db
